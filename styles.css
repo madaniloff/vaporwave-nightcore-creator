@@ -1,0 +1,185 @@
+.site-title {
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    color: white;
+} 
+
+body {
+    background-image: url("images/tilebackground.jpg");
+    background-size: 800px;
+    
+}
+
+.help-button {
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    width: 70px;
+    height: 50px;
+    border-radius: 60%;
+    background-color: rgb(139, 98, 236);
+    color: white;
+}
+
+.search-button {
+    width: 70px;
+    height: 50px;
+    border-radius: 60%;
+    background-color: rgb(139, 98, 236);
+    color: white;
+}
+
+.actual-image {
+    width: 600px;
+    height: 450px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upload {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    font-size: 18px;
+    padding: 15px 32px;
+    border-radius: 50px;
+}
+
+.inner-audio {
+    margin:30px;
+    
+}
+
+.audio-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.effect-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.keyword-container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    gap: 100px;
+}
+
+.inner-keyword {
+    margin: 30px;
+}
+
+.keyword-text {
+    text-align: center;
+    left: 75px;
+    position: relative;
+    color: white;
+    top: -20px;
+}
+
+.check {
+    width: 30px;
+    height: 30px;
+}
+
+.slider-container {
+    margin: auto;
+    text-align: center;
+
+}
+
+.effect-text {
+    text-align: center;
+    left: -120px;
+    position: relative;
+    color: white;
+}
+
+.keyword-search {
+    width: 500px;
+    height: 25px;
+}
+
+.slider-text {
+    text-align: center;
+    left: -300px;
+    position: relative;
+    color: white;
+    
+}
+
+.close-modal {
+    margin:auto;
+    width: 70px;
+    height: 50px;
+    border-radius: 60%;
+    background-color: rgb(139, 98, 236);
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#help-modal {
+    position: absolute;
+    z-index: 1;
+    width: 600px;
+    height: 500px;
+    background-color: #e8abf0;
+    border-width: 5px;
+    border-color: rgb(140, 0, 255);
+    border-style:solid;
+    margin:auto;
+    top: 500px;
+    left: 670px;
+    padding:5px;
+
+}
+
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    display: block;
+    appearance: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ab05dd; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #ab05dd; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }

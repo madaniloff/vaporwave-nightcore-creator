@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Vaporwave and Nightcore Creator</title>
+        <script src="require.js"></script>
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="site-title">
+                <h1>Vaporwave and Nightcore Creator</h1>
+            </div>
+        </header>
+
+        <main class="content">
+            <div id="parent">
+                <div class="inner">
+                    <img src="images/main-image.jpg" alt="vaporwave image" class="actual-image">
+                </div>
+                
+                <button class="help-button">Help</button>
+
+                <!--Modal Window for Help Button-->
+                <div id="help-modal" class="hidden">
+                    <h2>How to Use The Vaporwave and Nightcore Creator:</h2>
+                    <p>First of all, what are Vaporwave and Nightcore?
+                    </p>
+                    <div><object data="pipe.txt"></object></div>
+                    <p>
+                        To use this webpage, first find an audio file that you would like to modify.
+                        Click the 'Choose File' button and select the file. To the right of the upload 
+                        button is an audio player, which allows you to play the file that you uploaded.
+                    </p>
+                    <p>    
+                        Below, there are two sliders, one for speed, and one for pitch. Moving the first slider left
+                        slows the audio down, while moving it right speeds audio up. For the second slider,
+                        moving it lefts decreases the pitch, while moving it right increases the pitch.
+                    </p>
+
+                    <button class="close-modal">Close Window</button>
+                    
+
+                </div>
+
+                <div class="audio-container">
+
+                    <div class="inner-audio">
+                        <input type="file" id="upload" />
+                    </div>
+
+                    <div class="inner-audio">
+                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                        <audio id="audio" controls>
+                            <source src = "" id="src">
+                        </audio>
+                    </div>
+                
+                </div>
+
+                <div class="slider-container">
+                    <div>
+                        <h2 class="slider-text">Speed</h2>
+                        <input type="range" min="0" max="2" step=".01" value="1" class="slider" id="myRange" oninput="outputUpdate(value)" onchange="outputSpeed(value)">   
+                        <output for="slider" id="playbackrate" style="font-size: 0.9em;"></output>
+                    </div>
+                    
+                    <div>
+                        <h2 class="slider-text">Pitch</h2>
+                        <input type="range" min="-1200" max="1200" step="10" value="1" class="slider" id="myRange" oninput="pitchUpdate(value)" onchange="outputPitch(value)">
+                        <output for="slider" id="pitch" style="font-size: 0.9em;"></output>   
+                    </div>
+
+                </div>
+
+                <div class="effect-container">
+                    <div class="inner-effect">
+                        <h2 class="effect-text">Effects</h2>
+                    </div>
+                    <div class="inner-effect">
+                        <input type="checkbox" name="chorus" value="1" class="check">Chorus
+                        <input type="checkbox" name="chorus" value="12" class="check">Reverb
+                        <input type="checkbox" name="chorus" value="3" class="check">Delay
+
+                    </div>
+                    <a href=src download></a>
+                </div>
+                <!--
+                <div class ="keyword-container">
+                    <div class="inner-keyword">
+                        <h2 class="keyword-text">Keywords:</h2>
+                    </div>
+
+                    <div class="inner-keyword">
+                        <input name="keyword-input" type="text" class="keyword-search">
+                    </div>
+
+                    <div class ="inner-keyword keyword-button">
+                        <button class="search-button">Search</button>
+                    </div>
+                -->
+            </div>
+                
+        </main>
+        <script src="index.js" charset="utf-8" defer></script>
+        <script src="https://unpkg.com/tone@13.8.25/build/Tone.js"></script>
+    </body>
+</html>
+
